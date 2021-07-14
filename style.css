@@ -1,0 +1,315 @@
+*{padding: 0;margin: 0;}
+body{
+    overflow: hidden;
+    background-color:#262229 ;
+}
+
+.simulate{
+    display: none;
+}
+
+header{
+    width: 100%;
+
+    background-color:#262229 ;
+    position: sticky;
+    top: 0;
+}
+header nav{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width: 800px;
+    width: 80%;
+    
+    margin: auto;
+    display: flex;
+}
+
+header nav a{
+    margin: auto;
+    color: #9A999A;
+}
+header nav a:hover{
+    color: rgb(168, 80, 17);
+}
+
+@keyframes girar{
+    from{
+    transform: rotateY(0deg);
+    }
+    to{
+    transform: rotateY(360deg);
+    }
+}
+
+figure{
+    width: 50px;
+    /* margin-left: 20px; */
+    /* margin-top: 10px; */
+}
+ figure img{
+    width: 100%;
+    border-radius: 50%;
+
+    animation-name: girar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@media screen and (max-width:650px) { 
+
+    .simulate{
+        position: absolute;
+        width: 100%;
+        display: block;
+        color: white;
+        background-color:#262229 ;
+        padding: 10px;
+    }
+    
+    
+
+    header{
+        display: none;
+        width: 50%;
+        position: absolute;
+        
+    }
+    header nav{
+        
+        flex-direction: column;
+    }
+    header nav a{
+        
+        padding: 10px;
+    }
+
+    .simulate:active+header{
+        display: block;
+
+    }
+
+    header:hover{
+        display: block;
+    }
+
+
+}
+/* CUERPO */
+
+.cuerpo{
+    height: 90vh;
+    background-image: url("img/wallpaperbetter.com_1920x1080.jpg") ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    /* display: none; */
+}
+
+.cuerpo h1{
+    font-size: 80px;
+    text-align: center;
+    color: rgb(15, 37, 238);
+    margin-bottom: 40px;
+}
+ .cuerpo h2{
+    color: rgb(32, 7, 4);
+    text-align: center;
+}
+
+/* NIVEL */
+
+.scrool{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+
+.level{
+    scroll-margin: 50px;
+    background-color:#262229 ;
+    
+    text-align: center;
+    padding: 50px;
+    color: rgb(185, 57, 34);
+    
+}
+.level .level1{
+    color: seashell;
+    padding: 30px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: auto;
+}
+
+.level1 h3{
+    font-size: 30px;
+}
+
+.level1 h3 div{
+    border: solid;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 40px;
+    margin: auto;
+    margin-top: 20px;
+    color: rgb(204, 88, 34);
+}
+
+@media screen and (max-width:650px) { 
+
+    .level .level1{
+        flex-direction: column;
+    }
+    .level1 h3{
+ 
+      padding: 10px ;
+    }
+    
+   
+}
+
+
+/* CONTENIDO */
+.fondo_dos{
+    background-image: url("img/wallpaperbetter\(2\).jpg");
+    background-size: cover;
+    /* display: none; */
+    background-attachment: fixed;
+    background-position: left;
+
+
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.contenido h1{
+    font-size: 50px;
+    max-width: 500px;
+    padding-left:20px ;
+    padding-top:40px ;
+    color:seashell;
+}
+
+.contenido p{
+    width: 300px;
+  
+    padding: 20px;
+    color: seashell;
+    font-size: 20px;
+}
+
+/* VIDEO */
+
+.videopiscina{
+    /* display: none; */
+    width: 100%;
+    background-image: url("img//wallpaperbetter\ \(1\).jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.videopiscina h1{
+    background-color:#262229 ;
+    color: rgb(204, 88, 34);
+
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 0;
+}
+
+.movie{
+    padding: 20px 0;
+    max-width: 900px;
+   
+    max-width: 900px;
+    margin: auto;
+}
+.movie video{
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer{
+ 
+    background-color:#262229 ;
+
+color: white;
+    border-top:solid rgb(1, 1, 17);
+    text-align: center;
+    height: 30vh
+}
+
+footer .pie{
+    display: flex;
+    justify-content: center;
+}
+ .pie div{
+     width: 50%;
+     padding: 20px 10px;
+     box-sizing: padding-box;
+
+    }
+    
+    .pie div p{
+        margin: auto;
+        max-width: 200px;
+        /* background-color: rgb(81, 54, 131); */
+        padding: 5px;
+     text-align: center;
+    margin-top: 10px;
+ }
+
+ #registro{
+     scroll-margin-top: 20px;
+  border: solid #262229;
+     background-image: url("img/wallpaperbetter\ \(1\).jpg");
+     background-position: bottom;
+ 
+     background-size: cover;
+     background-attachment: fixed;
+ }
+#blog{
+    scroll-margin-top: 55px;
+    background-image: url("img//wallpaperbetter\(2\).jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#ing_escuela{
+    scroll-margin-top: 55px;
+    background-image: url("img/hombre.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contacto{
+    scroll-margin-top: 55px;
+    /* background-image: url("img/wallpaperbetter.com_1920x1080.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed; */
+    background-color: #FE6148;
+}
+ /* CROLL */

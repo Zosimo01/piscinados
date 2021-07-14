@@ -1,0 +1,132 @@
+
+body{
+    padding:0;margin:0;
+ 
+
+}
+.cuerpo{
+    box-sizing: content-box;    
+    height: 730px;
+    display: flex;
+}
+
+h1{
+    margin-top: 0;
+    text-align: center;
+    background-color:#262229 ;
+    padding: 30px 0;
+    color: rgb(204, 88, 34);
+
+}
+.listas, .contenido{
+    height: 730px;
+
+}
+
+.listas{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.listas h2, .listas nav{
+    border-bottom: solid rgb(255, 217, 0); 
+    padding: 0px 20px;
+    max-width: 200px;
+    color: rgb(204, 88, 34);
+    
+}
+
+.listas h2{
+    padding-top: 20px;
+    background-color: rgba(39, 22, 22, 0.856);
+}
+
+
+ol {
+    list-style-position: inside;
+}
+
+li{
+    padding: 20px 10px;
+    margin-top: 10px;
+
+    background-color:#262229 ;
+
+   
+
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #928c3ce1;
+    color: #000;
+}
+li:active{
+    
+    background-color: rgb(186, 196, 44);
+
+}
+
+.contenido{
+   width: 70%;
+}
+
+.oculta{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+   .oculta{
+       margin-top: 300px;
+        padding: 5px;
+        display: block;
+        height: 20px;
+        position: absolute;
+        float: right;
+        width: 50px;
+        background-color: rgb(37, 10, 99);
+        color: antiquewhite;
+        cursor: pointer;
+    }
+    .listas{
+        display: none;
+        background-color: whitesmoke;
+    }
+    .contenido{
+        width: 100%;
+    }
+
+    .oculta:active+.listas{
+        position: absolute;
+        display: block;
+        width: 250px;
+        animation-name:cinco,cuatro;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes cinco{
+        0%{background-color: rgba(213, 209, 231, 0.5);}
+        100%{background-color:whitesmoke;}
+    }
+    @keyframes cuatro{
+        0%{width:60px;}
+        100%{width: 250px;}
+    }
+
+    .listas:hover{
+        position: absolute;
+        overflow: hidden;
+        display: block;
+        width: 250px;
+           animation-name:cinco,cuatro;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
+}
+

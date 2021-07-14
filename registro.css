@@ -1,0 +1,86 @@
+body{
+    padding: 0;margin: 0;
+   
+}
+
+.horario{
+    text-align: center;
+}
+
+
+.horario .registro{
+    background-color:#262229 ;
+    color: rgb(247, 243, 241);
+    font-size: 30px;
+    padding: 30px 0;
+}
+.registro h1{
+ 
+    font-size: 20px;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    background-color: rgb(49, 35, 35);
+    color: rgb(204, 88, 34);
+
+}
+
+.horario p{
+    margin: 50px 0;
+    color: rgb(192, 162, 148);
+  
+    font-size: 20px;
+}
+
+.tabla{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.primeratabla{
+    margin: auto;
+}
+.primeratabla caption{
+    padding: 20px 0;
+    color: rgb(218, 24, 24);
+    background-color: rgba(70, 29, 29, 0.705);
+    
+}
+.primeratabla th,td{
+    border: solid rgb(39, 28, 28);
+    padding: 20px;
+    background-color:#2622299c ;
+    color: rgb(204, 88, 34);
+
+}
+
+.enviar{
+    background-color:#262229;
+}
+/* @media screen and (max-width:650px) { 
+    .ubicacion{
+        position: static;
+        width: auto;
+        height: 60px;
+
+    bottom: 0;
+    left:0;
+    }
+    .maps{
+        width: 90%;
+    }
+} */
+/* img */
+
+/* .maps{
+    margin-top: 20px;
+  
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.maps picture img{
+    width: 100%;
+} */

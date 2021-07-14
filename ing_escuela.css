@@ -1,0 +1,63 @@
+*{padding: 0;margin: 0;}
+.titu{
+    margin-top: 0;
+    text-align: center;
+    background-color:#262229 ;
+    padding: 30px 0;
+    color: rgb(204, 88, 34);
+}
+
+
+.modulos03{
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.modulos03 p{
+    max-width: 500px;
+    font-size: 20px;
+    /* float: right; */
+    text-align: justify;
+    padding: 0px 20px;
+    margin: auto;
+    color: rgb(248, 248, 247);
+}
+
+.piscina{
+    /* min-width: 350px; */
+   max-width: 500px;
+   margin: auto;
+}
+
+.piscina img{
+
+    width: 100%;
+}
+
+@media screen and (max-width:890px) {
+
+    .titu{
+        padding:10px;
+    }
+
+    .info{
+        flex-direction: column;
+   
+        align-items: center;
+        padding:20px 0 ;
+    }
+    .modulos03{
+        margin-top: auto;
+        width: 100%;
+    }
+
+    .modulos03 p{
+        float: none;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    .piscina{
+        margin: auto;
+    }
+}
